@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C113138120 個人履歷</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #6c757d;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        nav {
+            width: 20%;
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 10px 0 0 10px;
+            min-height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        nav:hover {
+            transform: translateX(-5px);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #495057;
+            font-weight: bold;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #343a40;
+        }
+
+        article {
+            width: 60%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+        }
+
+        article h3 {
+            font-size: 1.8em;
+            color: #495057;
+        }
+
+        article p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        aside {
+            width: 20%;
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            transition: transform 0.3s ease;
+        }
+
+        aside:hover {
+            transform: translateX(5px);
+        }
+
+        aside h3 {
+            font-size: 1.5em;
+            color: #343a40;
+        }
+
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin: 10px 0;
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            color: #495057;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        aside ul li a:hover {
+            color: #343a40;
+        }
+
+        .iframe-container {
+            position: relative;
+            padding-top: 56.25%;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-top: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            background-color: #495057;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1em;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+
+            nav,
+            article,
+            aside {
+                width: 100%;
+                margin: 10px 0;
+                border-radius: 10px;
+            }
+
+            main {
+                flex-direction: column;
+            }
+        }
+
+        nav h2 {
+            font-size: 2em;
+        }
+
+        aside h3 {
+            font-size: 2em
+        }
+
+        li {
+            font-size: 1.5em;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            max-width: 100%;
+            margin: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>韋長廷的個人履歷</h1>
+    </header>
+
+    <main>
+        <nav>
+            <h2>興趣</h2>
+            <ul>
+                <li><a href="#">打羽球</a></li>
+                <li><a href="#">打排球</a></li>
+                <li><a href="#">彈吉他</a></li>
+                <li><a href="#">看動漫</a></li>
+                <li><a href="#">打遊戲</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <body>
+            <h3>我的照片</h3>
+            <p>以下是我在彈吉他，以及和朋友們出去玩的照片。</p>
+            <iframe src="2.html" height=90% width=100%></iframe> 
+            </body>
+        </article>
+
+        <aside>
+            <h3>個性</h3>
+            <ul>
+                <li><a href="#">內向</a></li>
+                <li><a href="#">隨和</a></li>
+            </ul>
+            <h3>專長-電腦軟體</h3>
+            <ul>
+                <li><a href="#">Word</a></li>
+                <li><a href="#">Excel</a></li>
+                <li><a href="#">Access</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Illustrator</a></li>
+                <li><a href="#">Photoshop</a></li>
+                <li><a href="#">Powerpoint</a></li>
+                <li><a href="#">Photoimpact</a></li>
+                <li><a href="#">Dreamweaver</a></li>
+                <li><a href="#">Powerdirector</a></li>
+           
+                
+                
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <h4>C113138120 韋長廷</h4>
+    </footer>
+</body>
+
+</html>
+
